@@ -200,7 +200,7 @@ set wildmode=list:longest
 set ttyfast
 
 " 00x增减数字时使用十进制
-set nrformats=
+" set nrformats=
 
 "" 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 "set relativenumber number
@@ -541,20 +541,20 @@ nnoremap U <C-r>
 " ==========================================
 
 " gui-vim额外的配置
-if has("gui_running")
-    set guifont=Droid\ Sans\ Mono\ 12
-    if has("gui_gtk2")   "GTK2
-        set guifont=Droid\ Sans\ Mono\ 12
-    endif
-    set guioptions-=T
-    set guioptions+=e
-    set guioptions-=r
-    set guioptions-=L
-    set guitablabel=%M\ %t
-    set showtabline=1
-    set linespace=2
-    set noimd
-endif
+" if has("gui_running")
+    " set guifont=Monospace:h12
+    " if has("gui_gtk2")   "GTK2
+        " set guifont=Monospace\ 12
+    " endif
+    " set guioptions-=T
+    " set guioptions+=e
+    " set guioptions-=r
+    " set guioptions-=L
+    " set guitablabel=%M\ %t
+    " set showtabline=1
+    " set linespace=2
+    " set noimd
+" endif
 
 " theme主题
 set t_Co=256
@@ -817,11 +817,11 @@ let g:ctrlp_mruf_max=500
 let g:ctrlp_follow_symlinks=1
 
 "调用ag进行搜索提升速度，同时不使用缓存文件
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
-endif
+"if executable('ag')
+"  set grepprg=ag\ --nogroup\ --nocolor
+"  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"  let g:ctrlp_use_caching = 0
+"endif
 
 
 
